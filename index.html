@@ -1,7 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <!-- You can add a CSS file later for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Navigation styles */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+            color: white;
+        }
+        /* Section styles */
+        section {
+            padding: 20px;
+        }
+        /* Active section */
+        .active {
+            display: block;
+        }
+        .section-content {
+            display: none;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#academics">Academics</a>
+        <a href="#awards">Awards & Publications</a>
+        <a href="#nonacademics">Non-academics</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-content active">
+        <h1>About Me</h1>
+        <p>Welcome to my personal website! [Add your about me content here.]</p>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="section-content">
+        <h1>Academics</h1>
+        <p>[Add your academic background, degrees, institutions, etc.]</p>
+    </section>
+
+    <!-- Awards and Publications Section -->
+    <section id="awards" class="section-content">
+        <h1>Awards & Publications</h1>
+        <p>[List your awards, recognitions, and publications here.]</p>
+    </section>
+
+    <!-- Non-academics Section -->
+    <section id="nonacademics" class="section-content">
+        <h1>Non-academics</h1>
+        <p>[Describe your non-academic interests, hobbies, volunteer work, etc.]</p>
+    </section>
+
+    <!-- Optional JavaScript for Navigation (for single-page navigation without page reload) -->
+    <script>
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('.section-content');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+
+                // Remove 'active' class from all sections
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                // Add 'active' class to the target section
+                document.getElementById(targetId).classList.add('active');
+
+                // Update URL hash without jumping
+                history.pushState(null, null, `#${targetId}`);
+            });
+        });
+
+        // Show the section based on URL hash on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                const targetSection = document.getElementById(hash);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                }
+            }
+        });
+    </script>
+
 </body>
 </html>
