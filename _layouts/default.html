@@ -5,9 +5,15 @@
 
   <body>
     {% include header.html %}
+    <div class="sidebar">
+      <nav id="outline">
+        <!-- The JavaScript will populate the outline here -->
+      </nav>
+    </div>
     <main>
       <article>{{ content }}</article>
       {% include footer.html %}
     </main>
+    <script src="/assets/js/sidebar.js"></script>
   </body>
 </html>
