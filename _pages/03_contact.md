@@ -4,13 +4,11 @@ title: Contact
 permalink: /contact/
 ---
 
-# My personal contact
-
 ## Email
 
-Feel free to reach out on e-mail. [Gdzhao](grinderzhao@gmail.com)
+Feel free to reach out on e-mail. [grinderzhao@gmail.com](https://grinderzhao@gmail.com)
 
-Also for Users in mainland China, please contact the alternative e-mail. [Gdzhao-Mainland](andyzguandi@163.com)
+Also for Users in mainland China, please contact the alternative e-mail. [andyzguandi@163.com](https://andyzguandi@163.com)
 
 ## Contact address
 
