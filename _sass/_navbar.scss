@@ -1,0 +1,56 @@
+
+
+.navbar {
+    height: 40px; /* Adjust to desired height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $light;
+    padding: 0 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+
+    .gdzhao-link {
+        display: flex;
+        align-items: center;
+        color: $link-color;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        height: 40px; /* Match navbar height */
+
+        &:hover {
+            color: $link-hover-color;
+            background: $light;
+        }
+    }
+
+    // .logo-icon {
+    //     height: 32px; /* Scale the icon to 80% of the navbar height */
+    //     width: 32px; /* Maintain aspect ratio */
+    //     margin-right: 10px; /* Spacing between logo and text */
+    //     display: block; /* Prevent extra inline spacing */
+    // }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px; /* Space between links */
+        margin: 0;
+        padding: 0;
+
+        li a {
+            color: $link-color;
+            text-decoration: none;
+            font-size: 1rem;
+
+            &:hover {
+                color: $link-hover-color;
+            }
+        }
+    }
+}
