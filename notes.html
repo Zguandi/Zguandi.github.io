@@ -1,0 +1,18 @@
+---
+layout: default        # or any layout you like
+title: All notes
+permalink: /notes/     # nice clean URL
+---
+
+<h1>{{ page.title }}</h1>
+
+<ul class="notes-list">
+  {%- assign sorted = site.notes | sort: "title" -%}
+  {%- for note in sorted -%}
+    <li>
+      <a href="{{ note.url | relative_url }}">
+        {{ note.title | default: note.basename }}
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>
