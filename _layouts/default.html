@@ -6,8 +6,12 @@
   <body>
     {% include header.html %}
     <div class="sidebar">
-      <nav id="outline">
-        <!-- The JavaScript will populate the outline here -->
+      <nav id="outline"></nav>
+      <hr>
+      <nav id="all-notes">
+        {% for n in site.notes %}
+          <a href="{{ n.url | relative_url }}">{{ n.title | default: n.basename }}</a>
+        {% endfor %}
       </nav>
     </div>
     <main>
