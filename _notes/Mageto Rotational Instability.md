@@ -1,0 +1,2 @@
+Turbulence caused by fluid coupled to magentic field. (however the disk is only weakly ionized, and this might not be dominant)
+![Pasted image 20241215234519](/assets/pictures/Pasted image 20241215234519.png)

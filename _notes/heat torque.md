@@ -1,0 +1,1 @@
+Forming planets are hot, and the hotter it is, the more positive the torque is, and can change sign because of high temperature

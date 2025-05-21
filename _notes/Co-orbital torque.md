@@ -1,0 +1,1 @@
+The horseshoe region has a torque on the planet itself
