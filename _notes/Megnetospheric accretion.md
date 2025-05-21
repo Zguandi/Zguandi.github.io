@@ -1,0 +1,1 @@
+Accretion process of the stars. The main accretion path is created from motion of charged particles under stellar magnetic field.

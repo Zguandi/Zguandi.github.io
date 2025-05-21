@@ -1,0 +1,1 @@
+As supposed to [[moon]], the centre of mass is outside of astro body.

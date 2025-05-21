@@ -1,0 +1,1 @@
+A planetary-mass object that does NOT dominate its region of space. and is not a [[moon]] (satellite).

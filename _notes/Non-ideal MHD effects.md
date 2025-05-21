@@ -1,0 +1,1 @@
+Non-ideal MHD effect refers to the effects of partial ionization of the fluid.
