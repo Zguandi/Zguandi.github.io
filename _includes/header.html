@@ -2,18 +2,18 @@
     <div class="container">
         <nav>
             <ul>
-                <li><a href="{{ site.baseurl }}" class="gdzhao-link">
+                <li><a href="/" class="gdzhao-link">
                      Gdzhao
                 </a></li>
                 {% for page in site.pages %} {% if page.title %}
                 <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
                 {% endif %} {% endfor %}
-                <li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
+                <li><a href="/blog">Blog</a></li>
             </ul>
         </nav>
     </div>
 </aside>
 
 <header>
-	<h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+	<h1>{{ site.title }}</h1>
 </header>
