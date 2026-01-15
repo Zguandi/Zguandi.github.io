@@ -6,5 +6,6 @@ _site
 vendor
 Gemfile.lock
 
-# Archived markdown notes (replaced by HTML CosmoBrain)
+# Archived files (not for deployment)
 _archived_notes/
+_archived_cosmobrain/
