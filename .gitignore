@@ -2,5 +2,9 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+.claude
 vendor
 Gemfile.lock
+
+# Archived markdown notes (replaced by HTML CosmoBrain)
+_archived_notes/
