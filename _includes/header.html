@@ -8,6 +8,7 @@
                 {% for page in site.pages %} {% if page.title %}
                 <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
                 {% endif %} {% endfor %}
+                <li><a href="{{ "/cosmobrain/" | prepend: site.baseurl }}">CosmoBrain</a></li>
                 <li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
             </ul>
         </nav>

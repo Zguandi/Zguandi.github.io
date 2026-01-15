@@ -1,1 +1,0 @@
-The disk evolution is observed by pieceing tigether different snapshots of evolution. Because it usually takes 3-5 Myrs.

@@ -1,1 +1,0 @@
-linear hydrodynamic instability happens in disks when dis has vertical thermal structure set by stellar radiation.
