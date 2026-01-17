@@ -35,10 +35,10 @@ include: ['_pages']
 kramdown:
   input: GFM
 theme: minima
-# collections:
-#   notes:               # Disabled - replaced by standalone HTML CosmoBrain
-#     output: true
-#     permalink: /notes/:title/
+collections:
+  research:
+    output: true
+    permalink: /research/:title/
 plugins:
   - jekyll-feed
   - jekyll-wikilinks

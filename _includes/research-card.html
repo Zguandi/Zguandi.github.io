@@ -1,0 +1,29 @@
+<a href="{{ include.item.url | prepend: site.baseurl }}" class="research-card">
+  <div class="research-card__thumbnail">
+    {% if include.item.thumbnail %}
+      <img src="{{ include.item.thumbnail | prepend: site.baseurl }}" alt="{{ include.item.title }}">
+    {% else %}
+      <div class="research-card__placeholder">
+        <span>{{ include.item.title | slice: 0 }}</span>
+      </div>
+    {% endif %}
+  </div>
+  <div class="research-card__content">
+    {% if include.item.date %}
+      <time class="research-card__date">{{ include.item.date | date: "%Y" }}</time>
+    {% endif %}
+    <h3 class="research-card__title">{{ include.item.title }}</h3>
+    {% if include.item.description %}
+      <p class="research-card__description">{{ include.item.description }}</p>
+    {% elsif include.item.excerpt %}
+      <p class="research-card__description">{{ include.item.excerpt | strip_html | truncate: 150 }}</p>
+    {% endif %}
+    {% if include.item.tags.size > 0 %}
+      <div class="research-card__tags">
+        {% for tag in include.item.tags %}
+          <span class="research-card__tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</a>

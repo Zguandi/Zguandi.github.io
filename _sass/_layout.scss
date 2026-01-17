@@ -163,6 +163,30 @@ body {
     border-bottom: 2px solid $main;
   }
 
+  /* Content images - centered at 80% width */
+  main img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+  }
+
+  /* Figure captions - targets <p><em>Caption</em></p> after image */
+  main p > img + em,
+  main p + p > em:only-child {
+    display: block;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  /* Remove top margin from caption paragraph following image */
+  main p:has(> img) + p:has(> em:only-child) {
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+  }
+
   /* Responsive Design - Mobile */
   @media (max-width: 768px) {
     body {

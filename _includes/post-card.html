@@ -1,0 +1,25 @@
+<a href="{{ include.post.url | prepend: site.baseurl }}" class="post-card">
+  <div class="post-card__thumbnail">
+    {% if include.post.thumbnail %}
+      <img src="{{ include.post.thumbnail | prepend: site.baseurl }}" alt="{{ include.post.title }}">
+    {% else %}
+      <div class="post-card__placeholder">
+        <span>{{ include.post.title | slice: 0 }}</span>
+      </div>
+    {% endif %}
+  </div>
+  <div class="post-card__content">
+    <time class="post-card__date">{{ include.post.date | date: "%b %-d, %Y" }}</time>
+    <h3 class="post-card__title">{{ include.post.title }}</h3>
+    {% if include.post.excerpt %}
+      <p class="post-card__excerpt">{{ include.post.excerpt | strip_html | truncate: 150 }}</p>
+    {% endif %}
+    {% if include.post.tags.size > 0 %}
+      <div class="post-card__tags">
+        {% for tag in include.post.tags %}
+          <span class="post-card__tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</a>

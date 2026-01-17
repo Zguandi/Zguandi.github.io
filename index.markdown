@@ -4,6 +4,6 @@
 layout: home
 ---
 
-<h2>Main Page</h2>
+<h2>About Me</h2>
 
-Welcome! Browse **[all notes](/notes/)** or use the sidebar on any page.
+Hello! I am Guandi Zhao. Welcome to my personal website. I wish to share to you my passion for cosmology and astrophysics. I am currently a master student at ETH Zurich Department of Physics, 

@@ -5,9 +5,9 @@
                 <li><a href="/" class="gdzhao-link">
                      Gdzhao
                 </a></li>
-                {% for page in site.pages %} {% if page.title %}
+                {% for page in site.pages %}{% if page.title and page.permalink %}
                 <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-                {% endif %} {% endfor %}
+                {% endif %}{% endfor %}
                 <li><a href="/blog">Blog</a></li>
             </ul>
         </nav>
