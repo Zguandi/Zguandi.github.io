@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: research
 title: "Halo spin and orientation in interacting dark matter dark energy cosmology"
 date: 2025-01-01
 description: "Guandi Zhao, Jiajun Zhang, Peng Wang, and Ji Yao"
@@ -64,4 +64,4 @@ This can be seen in a slice comparison of the evolution of a typical filament st
 ![Figure 5](/assets/pictures/EVO.png)
 *Figure 5: Halo shape alignment with tidal environment in IDE models compared to $\Lambda$CDM.*
 
-The three models start with the same initial anisotropy at z=3.62, and as redshift decreases and the IDE effect grows stronger, IDE halos start to lose mass and grows diffuse in teh centre, while IDE II halos gain mass and become more compact compared to $\Lambda$CDM.
+The three models start with the same initial anisotropy at z=3.62, and as redshift decreases and the IDE effect grows stronger, IDE halos start to lose mass and grows diffuse in the centre, while IDE II halos gain mass and become more compact compared to $\Lambda$CDM.

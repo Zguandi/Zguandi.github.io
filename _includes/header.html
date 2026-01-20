@@ -3,7 +3,7 @@
         <nav>
             <ul>
                 <li><a href="/" class="gdzhao-link">
-                     Gdzhao
+                     About Me
                 </a></li>
                 {% for page in site.pages %}{% if page.title and page.permalink %}
                 <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
@@ -15,5 +15,5 @@
 </aside>
 
 <header>
-	<h1>{{ site.title }}</h1>
+    	<h1>{{ site.title }}</h1>
 </header>

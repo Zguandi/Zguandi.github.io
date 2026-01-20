@@ -1,57 +1,73 @@
-.sidebar {
+$sidebar-width: 300px;
+  $sidebar-margin: 20px;
+  $sidebar-hide-threshold: $content-width + 2 * ($sidebar-width + $sidebar-margin);
+
+  .sidebar {
     position: fixed;
-    left: 0;
-    top: 40px;
-    width: 250px; /* Adjust width as needed */
-    height: 100%;
-    background: $light;
-    padding: 20px;
+    /* Position sidebar in left margin, right-aligned to content edge */
+    /* Content left edge = (100vw - content-width) / 2 */
+    /* Sidebar left edge = content left edge - margin - sidebar-width */
+    left: calc((100vw - #{$content-width}) / 2 - #{$sidebar-margin} - #{$sidebar-width});
+    top: 400px;
+    width: $sidebar-width;
+    height: calc(100vh - 400px);
+    background: transparent;
+    padding: 15px;
     overflow-y: auto;
-    border-right: 1px solid #000654e6;
     font-family: Arial, sans-serif;
+    font-size: 0.9em;
+  }
+
+  /* Hide sidebar when left margin can't fit sidebar */
+  /* Threshold = 1000 + 2*(300+20) = 1640px */
+  @media (max-width: #{$sidebar-hide-threshold}) {
+    .sidebar {
+      display: none;
+    }
   }
   
   .sidebar a {
-    display: block; /* Ensure each item is on its own row */
-    margin: 5px 0;
+    display: block;
+    margin: 3px 0;
     text-decoration: none;
     color: #333;
-    padding: 5px;
+    padding: 5px 10px;
+    text-align: right;
     transition: background-color 0.2s ease;
   }
-  
+
   .sidebar a:hover {
-    background-color: #ddd;
+    background-color: rgba(0, 0, 0, 0.05);
   }
-  
+
   .sidebar a.active {
-    background-color: #13469f;
-    color: #fff;
+    background-color: rgba(19, 70, 159, 0.1);
+    color: #13469f;
     font-weight: bold;
+    border-right: 3px solid #13469f;
   }
-  
-  /* Adjust font size and indentation based on header levels */
+
+  /* Adjust font size based on header levels - right aligned */
   .sidebar .outline-h1 {
-    font-size: 1.2em;
-    margin-left: 0; /* No indentation for h1 */
+    font-size: 1.1em;
     font-weight: bold;
+    padding-right: 10px;
   }
-  
+
   .sidebar .outline-h2 {
-    font-size: 1em;
-    margin-left: 10px; /* Indentation for h2 */
+    font-size: 0.95em;
     font-weight: normal;
+    padding-right: 10px;
   }
-  
+
   .sidebar .outline-h3 {
-    font-size: 0.9em;
-    margin-left: 20px; /* Indentation for h3 */
+    font-size: 0.85em;
     font-weight: normal;
+    padding-right: 10px;
   }
-  
-  /* Add more styles for deeper levels if needed */
+
   .sidebar .outline-h4 {
     font-size: 0.8em;
-    margin-left: 30px;
+    padding-right: 10px;
   }
   

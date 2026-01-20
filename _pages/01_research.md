@@ -7,7 +7,8 @@ permalink: /research/
 <h2>Research Projects</h2>
 
 <div class="research-cards">
-  {% for item in site.research %}
+  {% assign sorted_research = site.research | sort: 'date' | reverse %}
+  {% for item in sorted_research %}
     {% include research-card.html item=item %}
   {% endfor %}
 </div>

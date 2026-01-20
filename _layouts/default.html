@@ -1,26 +1,12 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="/css/main.css">
 <html>
   {% include head.html %}
 
   <body>
     {% include header.html %}
-    <div class="sidebar">
-      <nav id="outline"></nav>
-      <hr>
-      <nav id="all-notes">
-        {% for n in site.notes %}
-          <a href="{{ n.url | relative_url }}">{{ n.title | default: n.basename }}</a>
-        {% endfor %}
-      </nav>
-    </div>
-    <main>
+    <main class="no-sidebar">
       <article>{{ content }}</article>
       {% include footer.html %}
     </main>
-    <script src="/assets/js/sidebar.js"></script>
-    <script type="text/javascript" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
   </body>
 </html>

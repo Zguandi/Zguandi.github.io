@@ -3,6 +3,8 @@ layout: post
 title:  "A blackhole raytracing pipeline"
 date:   2025-01-10 23:14:02 +0800
 categories: jekyll update
+thumbnail: /assets/thumbnails/fig_ring_plots.png
+description: blackhole rendering using raytracing in general relativity
 ---
 
 A primitive code written for black hole ray tracing, written in python. I admit that this is not optimized for performance, but it works.
