@@ -52,15 +52,15 @@ body {
     box-sizing: border-box;
     overflow: visible;
 
-    &::before {
-      content: '';
+    .header-image {
       position: absolute;
       left: 0;
       top: 100%;
       transform: translateY(-50%);
       width: 1440px;
       height: 700px;
-      background: url('/assets/pictures/header_page.png') left center / contain no-repeat;
+      object-fit: contain;
+      object-position: left center;
       z-index: -1;
     }
 
