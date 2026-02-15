@@ -51,5 +51,3 @@ $$
 $$
 
 Then we can use the four equations to setup numerical solution methods.
-
-## Numerical methods

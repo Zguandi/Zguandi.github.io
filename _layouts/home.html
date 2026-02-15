@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="home">
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2>Recent Posts</h2>
+    <div class="post-cards">
+      {% for post in site.posts %}
+        {% include post-card.html post=post %}
+      {% endfor %}
+    </div>
+  {%- endif -%}
+
+  {%- if site.research.size > 0 -%}
+    <h2>Research</h2>
+    <div class="research-cards">
+      {% assign sorted_research = site.research | sort: 'date' | reverse %}
+      {% for item in sorted_research %}
+        {% include research-card.html item=item %}
+      {% endfor %}
+    </div>
+  {%- endif -%}
+</div>

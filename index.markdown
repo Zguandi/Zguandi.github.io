@@ -6,4 +6,4 @@ layout: home
 
 <h2>About Me</h2>
 
-Hello! I am Guandi Zhao. Welcome to my personal website. I wish to share to you my passion for cosmology and astrophysics. I am currently a master student at ETH Zurich Department of Physics, 
+Hello! I am **Guandi Zhao**, I am currently a **master student** at **ETH Zurich Department of Physics**. I wish to share to you my passion for **cosmology and astrophysics**. 
